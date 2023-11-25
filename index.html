@@ -97,6 +97,16 @@
     z-index: -1;
     border-radius: 30%;
   }
+  .cup-handle{
+   background-color: hsl(0, 0%, 92%);
+   clip-path: circle(50% at 100% 51%);
+   width: 51px;
+   height: 92px;
+   position: absolute;
+   left: -49; 
+   z-index: 1; 
+   filter: blur(19px);
+  }
   
   .orangetop { 
   background-image: linear-gradient(to right, #eb640a 0%, #ac2c02 100%); 
@@ -131,6 +141,8 @@
   position : absolute; 
   top: -163px; 
   left: -155px; 
+  
+  
   }
   
   .blackthing{ 
@@ -142,12 +154,21 @@
   top: -184px; 
   left: -79px; 
   z-index: -2;
+  filter: blur(8px);
   }
-    
   
-      
-      
+  .coffeehandle{ 
+  background-color: black; 
+  clip-path: polygon(26% 14%, 100% 0%, 48% 33%, 58% 91%);
+  width: 112px ; 
+  height: 165px; 
+  position: absolute; 
+  left: -244;
+  top: -108px;
+  z-index: -4; 
+  filter: blur(27px);
   
+  }
 </style>
 <body>
   
@@ -158,16 +179,22 @@
   <div class="bustello left-bustello"></div>
   <div class="bustello right-bustello"></div>
   <div class="cup top-cup">
+    	<div class="cup-handle">
+    </div>
   	<div class="triangle"></div>
     	<div class="star"></div>
   	<div class="stripes"></div>
   </div>
   <div class="cup bottom-cup">
+    	<div class="cup-handle">
+    </div>
     <div class="triangle"></div>
-    	<div class="star"></div>
+    			<div class="star"></div>
   	<div class="stripes"></div>
   </div>
   <div class="cup middle-cup">
+    	<div class="cup-handle">
+    </div>
   	<div class="triangle"></div>
     	<div class="star"></div>
   	<div class="stripes">
@@ -179,6 +206,8 @@
   <div class="topofcoffee">
   </div>
   <div class="blackthing">
+    </div>
+ <div class="coffeehandle">
     </div>
     </div> 
     
